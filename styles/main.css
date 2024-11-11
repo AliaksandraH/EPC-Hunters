@@ -44,12 +44,10 @@ body {
     backdrop-filter: blur(2.2px);
     color: white;
     font: 400 20px/9.2px "Actay", sans-serif;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    overflow: hidden;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1279px) {
     body {
         padding: 30px 15px;
     }

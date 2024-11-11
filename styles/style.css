@@ -68,16 +68,78 @@
     text-align: center;
 }
 
-@media (max-width: 1000px) {
-    .navigation {
-        gap: 30px;
-    }
-    .header-menu-items {
-        gap: 20px;
-    }
+.title {
+    margin-top: 30px;
+    font: 700 90px/113.67px "Actay Wide", sans-serif;
 }
 
-@media (max-width: 800px) {
+.blocks {
+    padding: 0 20px;
+}
+
+.block {
+    width: 286px;
+    height: 79px;
+    color: #f6ffd2;
+    background: #ffffff4d;
+    border: 3px solid #ffffff;
+    border-radius: 35px 0px 35px 0px;
+    box-shadow: 0px 4px 15px 0px #ffffff59;
+    position: absolute;
+}
+
+.ellipse {
+    width: 51px;
+    height: 51px;
+    background: #5e7600;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+
+.text-ellipse {
+    font-size: 30px;
+    box-shadow: 0px 10px 6px 0px #ffffff26;
+}
+
+.text-block {
+    width: 195px;
+    font-size: 14px;
+    line-height: 18.2px;
+    letter-spacing: 0.8px;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.vector {
+    width: 13px;
+    top: -11px;
+    right: -12px;
+    position: absolute;
+}
+
+.slider {
+    display: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 18.2px;
+    letter-spacing: 0.8px;
+}
+
+.arrow-slider {
+    width: 20px;
+    height: 16px;
+}
+
+.arrow-left {
+    transform: scaleX(-1);
+}
+
+.line {
+    position: absolute;
+}
+
+@media (max-width: 1279px) {
     .header-menu-items {
         display: none;
     }
@@ -86,5 +148,57 @@
     }
     .burger {
         display: flex;
+    }
+    .main {
+        gap: 20px;
+    }
+    .title {
+        margin-bottom: 10px;
+        font: 700 35px/44.21px "Actay Wide", sans-serif;
+    }
+    .blocks {
+        width: 100%;
+    }
+    .block {
+        width: 100%;
+        height: 232px;
+        padding: 40px 10px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .ellipse {
+        width: 74px;
+        height: 73px;
+    }
+    .text-ellipse {
+        font-size: 50px;
+    }
+    .text-block {
+        width: 254px;
+        letter-spacing: 0.8px;
+        font-weight: 100;
+        text-align: center;
+    }
+    .vector {
+        width: 19px;
+        top: -22px;
+        right: -18px;
+        position: absolute;
+    }
+    .slider {
+        display: flex;
+    }
+    .line {
+        display: none;
+    }
+}
+
+@media (max-height: 832px) {
+    .title {
+        margin-bottom: 5px;
+        margin-top: 5px;
     }
 }
